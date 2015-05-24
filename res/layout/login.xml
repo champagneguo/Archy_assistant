@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bk22_1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"
+        android:text="用户名：" />
+
+    <EditText
+        android:id="@+id/login_ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/login_ed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/login_ed1"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/login_ed1"
+        android:layout_marginTop="38dp"
+        android:textStyle="bold"
+        android:text="密 码：" />
+
+    <CheckBox
+        android:id="@+id/login_cB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/login_ed2"
+        android:layout_marginTop="37dp"
+        android:text="保存用户名" />
+
+    <CheckBox
+        android:id="@+id/login_cB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login_cB1"
+        android:layout_alignBottom="@+id/login_cB1"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/login_cB1"
+        android:text="保存密码" />
+
+    <Button
+        android:id="@+id/login_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login_sumbit"
+        android:layout_alignBottom="@+id/login_sumbit"
+        android:layout_alignLeft="@+id/login_cB2"
+        android:text="取 消" />
+
+    <Button
+        android:id="@+id/login_sumbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/login_cB1"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:text="登 录" />
+
+</RelativeLayout>

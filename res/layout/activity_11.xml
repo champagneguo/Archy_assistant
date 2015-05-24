@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bk1" >
+
+    <EditText
+        android:id="@+id/activity_11_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:hint="  Key words...				"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/activity_11_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_11_et"
+        android:layout_alignTop="@+id/activity_11_et"
+        android:layout_toRightOf="@+id/activity_11_et"
+        android:layout_marginLeft="10dp"
+        android:text=" Serach " />
+
+    <ListView
+        android:id="@+id/activity_11_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_11_et"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+</RelativeLayout>

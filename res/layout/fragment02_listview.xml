@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/selector_listview_item_split"
+    android:padding="4dp" >
+
+    <ImageView
+        android:id="@+id/fragment02_listview_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/fragment02_listview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fragment02_listview_image"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/fragment02_listview_image"
+        android:text="调查问卷题目"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fragment02_listview_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fragment02_listview_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="参与人数"
+        android:textColor="#7A7C80"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fragment02_listview_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fragment02_listview_image"
+        android:layout_alignLeft="@+id/fragment02_listview_title"
+        android:text="类别："
+        android:textColor="#7A7C80"
+        android:textSize="14sp" />
+
+</RelativeLayout>

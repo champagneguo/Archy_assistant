@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.archy_assistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.archy_assistant_question.ConstantArrayList"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.archy_assistant.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity_menu"
+            android:label="  主菜单" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_network.Login"
+            android:label="  登录" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_network.Registor"
+            android:label="  注册" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity00"
+            android:label="  资讯平台" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity01"
+            android:label="  考古调查" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_question.Question01"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_question.ListQuestionsActivity"
+            android:label="  问卷详情" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_question.NewsDetailsActivity"
+            android:label="  考古新闻" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_question.ChartActivity"
+            android:label="  统计图表" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity03"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="  搜索导航"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_map.Activity03_add"
+            android:label="  考古点添加" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_map.Activity03_add1"
+            android:label="  考古点添加" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity04"
+            android:label="  考古图片" >
+        </activity>
+        <activity android:name="com.archy_assistant_WebBrowser.WebBrowser" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_gallerydemo.NewFolder"
+            android:label="  新建考古图片文件夹" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity07"
+            android:label="  通信平台" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity10"
+            android:label="  考古图书" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_book.ReadBook"
+            android:label="  图书内容" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_book.ReadBook_1"
+            android:label="  图书内容" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_book.InsertBook"
+            android:label="  图书目录" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_book.Listbook"
+            android:label="  文件目录" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity11"
+            android:label="  考古通" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_search.Activity11_add"
+            android:label="  增加词条" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_search.Activity11_update"
+            android:label="  修改词条" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity12"
+            android:label="  休闲娱乐" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant.Activity14"
+            android:label="  工具箱" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_gallerydemo.Gallery_demo"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_gallerydemo.GridImageView"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.archy_assistant_gallerydemo.ImageSwitcher"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:noHistory="false"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- 配置一个Service组件 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6" >
+
+    <TextView
+        android:id="@+id/question01_title"
+        style="@style/question01_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="&lt;设置问卷调查标题>" />
+
+    <RelativeLayout
+        android:id="@+id/question01_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" >
+
+        <LinearLayout
+            android:id="@+id/question01_linerlayout_previous"
+            style="@style/question01_btn_linear"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                style="@style/question01_btn_image"
+                android:src="@drawable/question01_arrow_previous" />
+
+            <TextView
+                style="@style/question01_btn_text"
+                android:text="上一题" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question01_linerlayout_next"
+            style="@style/question01_btn_linear"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/question01_next_image"
+                style="@style/question01_btn_image"
+                android:src="@drawable/question01_arrow_next" />
+
+            <TextView
+                android:id="@+id/question01_next_text"
+                style="@style/question01_btn_text"
+                android:text="下一题" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/question01_relativelayout"
+        android:layout_below="@+id/question01_title"
+        android:layout_margin="10dp"
+        android:background="@drawable/question01_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/question01_question"
+            style="@style/question01_question"
+            android:text="你需要调查的问题？" />
+
+        <ListView
+            android:id="@+id/question01_listview"
+            style="@style/question01_listview" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

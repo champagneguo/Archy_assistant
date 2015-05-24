@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment02_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFBF2"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/fragment02_arrow2"
+            android:layout_width="16dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrow2" />
+
+        <TextView
+            android:id="@+id/fragment02_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/fragment02_arrow2"
+            android:text="问卷列表"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fragment02_add"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/selector_white_btn"
+            android:text="添加"
+            android:textColor="#FFFBF2" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fragment02_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="4dp"
+        android:orientation="vertical"
+        android:padding="4dp" >
+    </ListView>
+
+</LinearLayout>

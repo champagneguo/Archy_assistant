@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/activity10_insertbook_lv_header"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/folder_android" />
+
+    <TextView
+        android:id="@+id/activity10_insertbook_lv_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/activity10_insertbook_lv_header"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/activity10_insertbook_lv_header"
+        android:text="文件夹名" />
+
+    <TextView
+        android:id="@+id/activity10_insertbook_lv_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity10_insertbook_lv_header"
+        android:layout_alignLeft="@+id/activity10_insertbook_lv_folder"
+        android:text="绝对路径名" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity10_insertbook_lv_size"
+        android:layout_alignBottom="@+id/activity10_insertbook_lv_size"
+        android:layout_alignParentRight="true"
+        android:text=" 篇" />
+
+    <TextView
+        android:id="@+id/activity10_insertbook_lv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity10_insertbook_lv_folder"
+        android:layout_alignBottom="@+id/activity10_insertbook_lv_folder"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="文章数	" />
+
+</RelativeLayout>

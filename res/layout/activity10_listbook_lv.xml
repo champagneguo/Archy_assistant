@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/txt" />
+
+    <TextView
+        android:id="@+id/activity10_listbook_lv_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="文件名" />
+
+    <TextView
+        android:id="@+id/activity10_listbook_lv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignRight="@+id/activity10_listbook_lv_filename"
+        android:text="文件上次修改时间" />
+
+    <TextView
+        android:id="@+id/activity10_listbook_lv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity10_listbook_lv_time"
+        android:layout_alignBottom="@+id/activity10_listbook_lv_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:text="文件大小" />
+
+</RelativeLayout>

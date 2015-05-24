@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_listview_item_split"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/listquestions_listview_quetions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:maxLines="2"
+            android:text="1.问题"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/listquestions_listview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/listquestions_listview_quetions"
+            android:layout_alignLeft="@+id/listquestions_listview_quetions"
+            android:layout_alignParentBottom="true"
+            android:text="当前时间"
+            android:textColor="#7A7C80"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/listquestions_listview_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="参与人数"
+            android:textColor="#7A7C80"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
